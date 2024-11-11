@@ -7,14 +7,13 @@
     body {
         margin: 0;
         background: linear-gradient(180deg, blue, orange, lightblue);
-        font-family: Arial, sans-serif;
-        height: 100vh; 
+        font-family: Arial, sans-serif; 
         display: flex;
         justify-content: center;
         align-items: center; 
     }
     .wrapper {
-        width: 300px;
+        width: 850px;
         min-height: 400px;
         margin: auto;
         padding: 20px;
@@ -32,10 +31,12 @@
     }
 
     .wrapper img {
-        width: 100%; 
+        width: 70%; /* Adjusted to make the logo more prominent */
         height: auto; 
         border-radius: 10px;
         margin-bottom: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for prominence */
+        border: 2px solid white; /* Optional border */
     }
     nav {
         margin-top: 30px;
@@ -102,6 +103,12 @@
         padding: 10px;
         border-radius: 5px;
     }
+    .pastry-section img {
+        width: 100%; /* Make images fit within each pastry section */
+        height: auto;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
     .pastry-section li:hover {
         background-color: lavender;
         color: black;
@@ -112,8 +119,8 @@
 
 <body>
     <div class="wrapper">
-        <h1>Whisk N' Wonder</h1>
-        <img src="Whisk N Wonder Logo.png" 
+        <h1>WELCOME TO</h1>
+        <img src="Whisk N Wonder Logo.png" alt="Whisk N' Wonder Logo">
         
         <nav>
             <ul>
@@ -129,9 +136,18 @@
         <a href="tel:+16175355000" class="menu-button">(617) 535-5000</a>
 
         <ul class="pastry-section">
-            <li>Chin Chin</li>
-            <li>Carrot Bliss Buns</li>
-            <li>Meatpie</li>
+            <li>
+                Chin Chin
+                <img src="GRA1750P5HalimahOlabisi2024/Chin Chin.jpeg" alt="Chin Chin">
+            </li>
+            <li>
+                Carrot Bliss Buns
+                <img src="GRA1750P5HalimahOlabisi2024/Carrot Bliss Buns.JPG" alt="Carrot Bliss Buns">
+            </li>
+            <li>
+                Meatpie
+                <img src="GRA1750P5HalimahOlabisi2024/Meat Pie.jpeg" alt="Meatpie">
+            </li>
         </ul>
     </div>
 </body>
