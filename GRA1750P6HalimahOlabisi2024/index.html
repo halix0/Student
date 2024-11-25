@@ -70,6 +70,20 @@
             font-weight: bold;
             color: white;
         }
+        wrapper.photos {
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 20px auto;
+            gap: 10px;
+        }
+        wrapper.photos img {
+            width: 48%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #333;
+        }
         wrapper.content {
             display: flex;
             justify-content: space-between;
@@ -118,8 +132,13 @@
         <a href="#">Facebook</a>
     </nav>
     <wrapper class="banner">
-        <img src="Whisk-N'-Wonder-Logo.PNG" alt>
+        <img src="Whisk-N'-Wonder-Logo.PNG" alt="Logo">
         <p>THIS WEEK'S SPECIAL: Carrot Bliss Buns! Soft, fluffy buns made with fresh carrots and a touch of sweetness. Only $5.00 each!</p>
+    </wrapper>
+    <!-- NEW SECTION: PICTURES -->
+    <wrapper class="photos">
+        <img src="Carrot Bliss Buns.JPG" alt="Carrot Bliss Bun - Close Up">
+        <img src="Meat Pie.jpeg" alt="Carrot Bliss Bun - Display">
     </wrapper>
     <wrapper class="content">
         <section>
