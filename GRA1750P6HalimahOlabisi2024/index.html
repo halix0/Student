@@ -2,8 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whisk N' Wonder | Halimah Olabisi, 2024</title>
     <style>
+        
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -115,6 +117,40 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Styles for Mobile Devices */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+            nav a {
+                margin: 5px 0;
+                width: calc(100% - 40px);
+                text-align: center;
+            }
+            wrapper.banner img, wrapper.banner p {
+                max-width: 100%;
+            }
+            wrapper.photos {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            wrapper.photos img {
+                width: 80%;
+            }
+            wrapper.content {
+                flex-direction: column;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            wrapper.content section {
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -135,7 +171,6 @@
         <img src="Whisk-N'-Wonder-Logo.PNG" alt="Logo">
         <p>THIS WEEK'S SPECIAL: Carrot Bliss Buns! Soft, fluffy buns made with fresh carrots and a touch of sweetness. Only $5.00 each!</p>
     </wrapper>
-    <!-- NEW SECTION: PICTURES -->
     <wrapper class="photos">
         <img src="Carrot Bliss Buns.JPG" alt="Carrot Bliss Bun - Close Up">
         <img src="Meat Pie.jpeg" alt="Carrot Bliss Bun - Display">
@@ -154,7 +189,7 @@
         </section>
     </wrapper>
     <footer>
-       <p>© 2024, Halimah Olabisi. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+        <p>© 2024, Halimah Olabisi. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
     </footer>
 </body>
 </html>
