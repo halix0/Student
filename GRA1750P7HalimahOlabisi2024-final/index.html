@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Fast 2 Furious</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      height: 100vh;
+      overflow: hidden; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    h1, h2, h3, header {
+      font-family: 'Anton', sans-serif;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://64.media.tumblr.com/da9e34be8c3a70ba6244902ebd3bcad8/e6a4d1afd1d93e25-08/s540x810/0e395bfd2ae99623d8406f7dc3b53195cc597e82.gif') no-repeat center center;
+      background-size: cover;
+      z-index: -1; /* Ensure it stays behind the content */
+    }
+
+    wrapper {
+      position: relative;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.6); 
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    header {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin-bottom: 30px;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-family: 'Anton', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .promo-text {
+      font-size: 22px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .cast-and-crew h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      font-family: 'Anton', sans-serif;
+    }
+
+    .cast-and-crew ul {
+      list-style: square;
+      margin-left: 20px;
+    }
+
+    .cast-and-crew {
+      display: flex;
+      justify-content: center; /* Center the images */
+      gap: 20px; /* Space between the images */
+      flex-wrap: wrap;
+    }
+
+    .cast-and-crew img {
+      width: 300px;  /* Fixed width for both images */
+      height: auto;  /* Keep aspect ratio */
+      border-radius: 10px;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: gray;
+    }
+
+    footer a {
+      color: lightblue;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+ 
+  <wrapper>
+    <header>2 Fast 2 Furious</header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trailer</a></li>
+        <li><a href="#">Cast and Crew</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="main-content">
+      <p class="promo-text">
+        Buckle up for an adrenaline-fueled ride with "2 Fast 2 Furious" (2003)! Follow Brian O'Conner and Roman Pearce as they race their way through high-speed chases and daring missions in Miami.
+      </p>
+      <div class="cast-and-crew">
+        <h2>Cast and Crew</h2>
+        <ul>
+          <li>Paul Walker as Brian O'Conner</li>
+          <li>Tyrese Gibson as Roman Pearce</li>
+          <li>Eva Mendes as Monica Fuentes</li>
+          <li>Directed by: John Singleton</li>
+          <li>Produced by: Neal H. Moritz</li>
+        </ul>
+        <!-- Insert your images below -->
+        <div class="cast-images">
+          <img src="2 fast.jpg" alt="Image 1 Description">
+          <img src="2-fast-2-furious-2BKPHT7.jpg" alt="Image 2 Description">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>© 2024, Halimah Olabisi. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+      <p><a href="#">Back to Top</a></p>
+    </footer>
+  </wrapper>
+</body>
+</html>
