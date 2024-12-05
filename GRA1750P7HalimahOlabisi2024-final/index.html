@@ -14,10 +14,10 @@
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
+      height: 100%; 
       font-family: 'Roboto', sans-serif;
-      height: 100vh;
-      overflow: hidden; 
+      overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -38,7 +38,7 @@
       height: 100vh;
       background: url('https://64.media.tumblr.com/da9e34be8c3a70ba6244902ebd3bcad8/e6a4d1afd1d93e25-08/s540x810/0e395bfd2ae99623d8406f7dc3b53195cc597e82.gif') no-repeat center center;
       background-size: cover;
-      z-index: -1; /* Ensure it stays behind the content */
+      z-index: -1; 
     }
 
     wrapper {
@@ -47,8 +47,10 @@
       background-color: rgba(0, 0, 0, 0.6); 
       padding: 20px;
       border-radius: 10px;
-      max-width: 800px;
+      max-width: 1000px; /* Increased max-width */
       width: 100%;
+      height: 100%;
+      overflow-y: auto; /* Allows scrolling if content overflows */
     }
 
     header {
@@ -82,31 +84,35 @@
     }
 
     .cast-and-crew h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
+      font-size: 32px;
+      margin-bottom: 20px;
       font-family: 'Anton', sans-serif;
     }
 
     .cast-and-crew ul {
       list-style: square;
       margin-left: 20px;
+      margin-bottom: 20px;
     }
 
     .cast-and-crew {
       display: flex;
-      justify-content: center; /* Center the images */
-      gap: 20px; /* Space between the images */
-      flex-wrap: wrap;
+      flex-direction: column; 
+      justify-content: flex-start; 
+      align-items: center; 
+      gap: 20px;
+      margin-top: 20px;
     }
 
     .cast-and-crew img {
-      width: 300px;  /* Fixed width for both images */
-      height: auto;  /* Keep aspect ratio */
+      width: 300px;  
+      height: 450px; 
+      object-fit: cover; 
       border-radius: 10px;
     }
 
     footer {
-      margin-top: 20px;
+      margin-top: 40px;
       font-size: 14px;
       color: gray;
     }
@@ -143,10 +149,9 @@
           <li>Directed by: John Singleton</li>
           <li>Produced by: Neal H. Moritz</li>
         </ul>
-        <!-- Insert your images below -->
+        
         <div class="cast-images">
           <img src="2 fast.jpg" alt="Image 1 Description">
-          <img src="2-fast-2-furious-2BKPHT7.jpg" alt="Image 2 Description">
         </div>
       </div>
     </section>
